@@ -17,7 +17,7 @@
 - conducătorul decide vârsta minimă atunci când se voteză o anumită lege(poate alege intre 14 +, 20 + sau 40 ani +).
 - toti cetatenii care au varsta minima pentru a vota, au votul echivalent cu al celorlalti. <br>
 
-## Formatul fișierului de input
+## Formatul fișierului de input:
 Fișierul de input va conține:
 - numărul corespunzător zonei și populația din acea zonă
 - zona 1 va conține numărul de persoane care au respectat în următoarea ordine obligațiile: 4 3 2 1 0 (pentru exemplul de la final 30000 de persoane au respectat 3 obligații, adică au 0.8 puncte de vot).
@@ -27,7 +27,7 @@ Fișierul de input va conține:
 - următoarele linii contin numarul de întrebari + zona la care fac referință.
 - sub întrebare exista 2 randuri în care se gasesc informațiile despre câte persoane au votat DA/NU conform formatului zonei de care aparțin.  <br>
 
-## Formatul fișierului de output
+## Formatul fișierului de output:
 Fișierul de ieșire va avea următorul format: <br>
 &emsp;**Zona X** <br>
 &emsp;**Întrebarea** <br>
@@ -35,7 +35,7 @@ Fișierul de ieșire va avea următorul format: <br>
 - Acestea trebuie să fie în fișierul de output în aceeași ordine în care au fost primite în fișierul de input.
 - Adăugați și procentul din populația eligibilă să voteze care și-a exprimat această opțiune, nu rotunjiti cifrele din procente, daca aveti 0.239 afisati 23%. <br>
 ## Exemplu:
-### Input.txt
+### Input.txt 
  1 150000 <br>
  70000 30000 40000 9000 999 <br>
  2 230000 <br>
