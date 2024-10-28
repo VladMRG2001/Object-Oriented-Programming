@@ -1,0 +1,24 @@
+class Vehicul {
+	char *proprietar;
+	int pret;
+};
+
+class Remorca{ // mosteneste Vehicul
+	int dimensiuni[3]; //lungime, latime si inaltime
+	int greutate_maxima;
+};
+
+class Masina{ // mosteneste Vehicul
+	int dimensiuni[3]; //lungime, latime si inaltime
+	char *marca;
+};
+
+class Masina_cu_remorca{ // mosteneste Masina si Remorca
+	int masa_totala; //fara incarcatura
+};
+
+Cerinte:
+1. Implementati toate metodele astfel incat programul sa functioneze corect
+2. In main initializati un vector de elemente neomogene, adica un vector care sa contina obiecte de tip Vehicul, Remorca si Masina si Masina_cu_remorca. Minim cate un obiect din fiecare.
+3. Sortati vectorul in functie de pret si afisati vectorul.
+4. Implementati operatorul +, -, <, > pentru clasa Masina_cu_remorca si folositi operatorii intr-un exemplu in main.

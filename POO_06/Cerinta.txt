@@ -1,0 +1,13 @@
+template <class X>
+class Vector
+{
+	int dim;
+	X *buf;
+};
+
+Cerinte:
+1. Implementati clasele Fractie si Nr_complex
+2. Implementati toate metodele astfel incat programul sa functioneze corect
+3. Specializati clasa pentru int, double, Nr_complex si Fractie
+4. In main folositi clasa pentru cate un vector de tip int, double, Nr_complex si Fractie(adica creati un obiect de tip Vector o data pentru int, inca o data pentru double etc).
+5. Sortati fiecare vector si afisati-l

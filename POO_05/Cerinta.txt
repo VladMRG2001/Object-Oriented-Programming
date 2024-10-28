@@ -1,0 +1,27 @@
+class Nota{
+protected:
+	int *note;
+	int nr_note;
+};
+
+class Diriginte{
+protected:
+	char *nume;
+	char grupa[7];
+};
+
+class Clasa{
+protected:
+	int nr_elevi;
+};
+
+class Student: public Nota, public Diriginte, public Clasa {
+	char *nume;
+};
+
+Cerinte:
+1. Implementati toate metodele astfel incat programul sa functioneze corect
+2. Creati in main un vector alocat dinamic de tip Student acesta sa contina minim 10 studenti(citirea o puteti face cum doriti)
+3. Sortati vectorul de studenti in functie de media notelor Studentului
+4. Schimbati numele dirigintelui de la clasa
+5. Adaugati un nou elev pe pozitia X (adica numarul de elevi din vector va creste cu 1

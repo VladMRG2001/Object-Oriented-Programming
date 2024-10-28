@@ -1,0 +1,24 @@
+Realizati un program de evidenta pentru adoptia pisicilor dintr-o cafenea.
+O cafenea are in grija foarte multe pisici pe care le da spre adoptie, 
+acestea sunt de mai multe culori(pisici albe, pisici negre, pisici colorate). 
+Fiecare pisica are o varsta, un nume, o descriere si se stie daca au vaccinurile facute sau nu. 
+Cafeneaua are o capacitate de 300 pisici si sa presupunem ca acum este plina.
+Pisicile din cafenea sunt impartite in 3 categorii:
+	● pui: 0-1 an
+	● tinere: 1-3 ani
+	● mature: 3+ ani
+
+Cerinte:
+	● Stiind ca in medie sunt adoptate 5 pisici pe zi si sunt salvate alte 3, 
+	calculati in cate zile va ajunge cafaneaua sa aiba o ocupare a locurilor <= 50%.
+	● Stiind ca o pisica mananca 100g de mancare pe zi, 
+	calculati cata mancare de pisici va consuma cafeneaua in 100 de zile?
+	● Afisati urmatoarele detalii despre fiecare categorie de varsta de mai sus:
+		○ cate pisici sunt in fiecare categorie
+		○ cate de fiecare culoare sunt in fiecare categorie
+		○ cate au vaccinurile facute in fiecare categorie
+	● Afisati urmatoarele detalii despre top 3 pisici care au cea mai lunga descriere:
+		○ nume
+		○ varsta
+		○ descriere
+		○ daca au vaccinurile facute

@@ -1,0 +1,18 @@
+class Dop{
+protected:
+	int diametru;
+	char *tip;
+};
+
+class Sticla: public Dop{
+	int pret;
+	char *marca;
+};
+
+Cerinte:
+1. Implementati constructorul cu parametri/fara parametri
+2. Implementati constructorul de copiere, operatorul = si destructorul
+3. Creati un vector alocat dinamic in main cu obiecte de tip Sticla
+4. Populati vectorul folosind operatorul >>
+5. Sortati vectorul dupa pret
+6. afisati Sticlele (folosind operatorul <<) care au diametru Dop > 5

@@ -1,0 +1,29 @@
+class Portocale //pretul final = nr_kilograme/pret_kg
+{
+	int nr_kilograme; // in kilograme
+	int pret_kg;
+};
+ 
+class Banana // pret final = pret bucata
+{
+	int pret_bucata;
+};
+ 
+class Nuci // pretul final = cantitate/pret_100_grame
+{
+	int cantitate; // in grame
+	int pret_100_grame;
+};
+ 
+class Morcovi // pretul final = cantitate/pret_100_grame
+{
+	int cantitate; // in grame
+	int pret_100_grame;
+};
+
+Cerinte:
+1. Implementati toate metodele astfel incat programul sa functioneze corect
+2. In main creati un vector de 10 elemente care sa contina Portocale, Banana, Nuci, Morcovi si sa il afisati de forma: Nume clasa -> pret total, exemplu: Morcovi -> 130 lei etc
+3. Calculati si afisati pretul total al alimentelor din vector(adica faceti suma preturilor finale)
+4. Sortati si afisati vectorul astfel incat sa aveti alimentele in ordinea: Banana, Portocale, Morcovi, Nuci (adica bananele se fie primele din vector dupa portocalele etc)
+5. Afisati costul total al tuturor Portocalelor(adica suma la pretul final de la toate elementele de tip Portocale)

@@ -1,0 +1,20 @@
+Realizati un program de management pentru o ferma.
+
+Ferma contine un depozit cu mancare, cu o capacitate de 2000 kg si mai multe hambare pentru animale. 
+Stiind datele despre cat mananca fiecare animal pe zi, realizati o estimare pentru urmatoarele 365 de zile.
+ 
+La ferma se gasesc:
+ 	- 10 vaci care mananca 30 kg nutreț pe zi
+	- 100 de gaini care mananca 5 kg de grăunțe pe zi
+ 	- 2 cai care mananca 8 kg de nutreț pe zi
+ 	- 8 porci care mananca 4 kg de graunțe si 5 kg de iarba pe zi
+ 	- 4 capre care mananca 4 kg de nutreț pe zi
+
+In estimarea pentru urmatoarele 365 de zile calculati:
+	- ce cantitate din fiecare mancare trebuie stocata in depozit astfel incat aceasta sa ajunga cat mai multe zile
+ 	- de cate ori trebuie sa fie reumplut depozitul
+ 	- afisati cata mancare va ramane la finalul anului (in total si pe fiecare categorie)
+ 	- cata mancare se consuma pe zi(in total si pe fiecare categorie)
+ 	- top 3 consumatori de mancare (ca si cantitate in kg, nu conteaza tipul mancarii)
+
+ Afisati detaliile despre fiecare animal(nume, numar de animale, cat mananca si ce mananca).
