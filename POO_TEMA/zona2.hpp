@@ -17,3 +17,4 @@ class zona2: public Baza{
 		float punctaj_nu(int [],int);
 };
 #endif
+ 
