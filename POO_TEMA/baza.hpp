@@ -18,5 +18,5 @@ class Baza{
 		virtual float punctaj_nu(int [],int) = 0;
 		virtual float punctaj_da(int [],int) = 0;
 };
-
+ 
 #endif
