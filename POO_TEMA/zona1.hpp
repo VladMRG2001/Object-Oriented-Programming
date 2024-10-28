@@ -16,4 +16,4 @@ class zona1: public Baza {
         float punctaj_da(int[], int);
         float punctaj_nu(int[], int);
 };
-#endif
+#endif 
