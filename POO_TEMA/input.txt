@@ -19,3 +19,4 @@ Nu 4 50 40 200 4500
 Marim salariul minim cu 100 lei?
 Da 40000
 NU 40000
+ 
