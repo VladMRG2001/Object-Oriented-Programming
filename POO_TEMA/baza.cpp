@@ -1,4 +1,4 @@
 #include "baza.hpp"
 
-Baza::~Baza(){}
+Baza::~Baza(){} 
 
