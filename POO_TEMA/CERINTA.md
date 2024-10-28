@@ -1,4 +1,4 @@
-## Descriere temă: <br>
+## Descriere temă: <br> 
  Pe o planetă existau 3 regiuni, fiecare avea un alt mod în care era condusă. <br>
 ### Prima zonă
 - condusă de o facțiune religioasă.
