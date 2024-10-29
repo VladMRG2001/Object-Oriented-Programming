@@ -3,18 +3,19 @@
 
 #include "diriginte.hpp"
 #include "nota.hpp"
+#include "clasa.hpp"
 
-class Student: public Nota, public Diriginte{ // Mosteneste de la Nota si Diriginte
-	char *nume;
+class Student : public Nota, public Diriginte, public Clasa {
+    char* nume;
 public:
-	Student(); // constructor fara parametri
-	Student(const int*,int,const char*, const char [], const char*); // constructor cu parametri
-	Student(const Student&); // constructor de copiere
-	Student& operator=(const Student&); // constructor de atribuire =
-	~Student(); // destructor
-	void interschimbare(Student&); // metoda de interschimbare
-	
-	friend ostream& operator<<(ostream&, const Student&); // constructor de afisare <<
+    Student();
+    Student(const int*, int, const char*, const char[], int, const char*);
+    Student(const Student&);
+    ~Student();
+
+    Student& operator = (const Student&);
+    friend ostream& operator<<(ostream&, const Student&);
+    void interschimbare(Student&);
 };
 
 #endif
