@@ -1,12 +1,12 @@
 #include "header_lab3.hpp" // includem header-ul in fisierul de cpp
 
-Fractie::Fractie(int aa, int bb){ // practic pt orice valori ele vor fi 0 automat
+Fractie::Fractie(int aa, int bb){ 
     a = aa;
     b = bb;
 }
 
-Fractie::Fractie(const Fractie &f){ // un obiect de tip Fractie cu numele f
-    a = f.a; // acum poti accesa parametrii obiectului f
+Fractie::Fractie(const Fractie &f){ 
+    a = f.a; 
     b = f.b;
 }
 
