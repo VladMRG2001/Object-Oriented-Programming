@@ -1,22 +1,22 @@
 #ifndef CLASA_HPP
 #define CLASA_HPP
 
-#include "student.hpp"
+#include <iostream>
+#include <cstring>
+using namespace std;
 
-class Clasa{
-	int nr_elevi;
-	Student* elevi;  // Adaugă o variabilă pentru a stoca vectorul de studenți
-public:
-	Clasa(); // Constructor fsara parametri
-	Clasa(int); // Constructor care primește doar numărul de elevi
-	Clasa(Student*, int);  // Constructor care primește un pointer la studenți și numărul de elevi
-	Clasa(const Clasa&);
-	Clasa& operator=(const Clasa&);
-	~Clasa();
-	
-	friend ostream& operator<<(ostream&, const Clasa&);
-	void sortare();
-	void schimbare_diriginte(const char* );
+class Clasa {
+    protected:
+        int nr_elevi;
+    public:
+        Clasa();
+        Clasa(int);
+        Clasa(const Clasa&);
+        ~Clasa();
+
+        Clasa& operator = (const Clasa&);
+        friend ostream& operator<<(ostream&, const Clasa&);
+        void setNrelevi(int);
 };
 
 #endif
