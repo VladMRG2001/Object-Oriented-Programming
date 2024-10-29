@@ -1,5 +1,3 @@
-//#include "sticla.hpp"
-//#include "dop.hpp"
 #include "sticla.cpp"
 #include "dop.cpp"
 
@@ -12,7 +10,7 @@
  5. Sortati vectorul dupa pret
  6. afisati Sticlele (folosind operatorul <<) care au diametru Dop > 5
 */
-// Punctele 1 si 2 au fost implementate la nivelul fiecare clase in parte
+// Punctele 1 si 2 au fost implementate la nivelul fiecarei clase in parte
 // Operatorii <<, >> si = sunt supradefiniti pentru a ii spune compilatorului cum sa se comporte cu elemente de tip definit de utilizator
 
 int main()
