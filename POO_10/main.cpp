@@ -38,8 +38,8 @@ int main()
 	//In cate zile ajunge la capacitate de 50%
 	
 	int nr_initial = 300;
-    for(int i=1;i<500;i++)
-    {
+   	for(int i=1;i<500;i++)
+   	{
 		nr_initial =  nr_initial - 2;
     	if(nr_initial == 150) cout << "Ajunge la 50% in " << i << " de zile" << endl << endl;
 	}
