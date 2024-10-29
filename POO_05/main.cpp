@@ -1,10 +1,7 @@
-//#include "clasa.hpp"
 #include "clasa.cpp"
 #include "diriginte.cpp"
-//#include "diriginte.hpp"
 #include "nota.cpp"
 #include "student.cpp"
-//#include "studenti.hpp"
 
 /*
  Cerinte:
@@ -16,38 +13,73 @@
  5. Adaugati un nou elev pe pozitia X (adica numarul de elevi din vector va creste cu 1
 */
 
-// 1 a fost implementat in toate clasele
 int main()
 {
-	// 2. Alocarea dinamica a 10 studenti
-	Student* v = new Student[10];
-	// Declarare note 
-	int nota1[2] = {6, 3};
-	int nota2[2] = {4, 6};
-	int nota3[2] = {10, 9};
-	int nota4[2] = {9, 8};
-	int nota5[2] = {10, 2};
-	int nota6[2] = {5, 9};
-	int nota7[2] = {9, 3};
-	int nota8[2] = {10, 9};
-	int nota9[2] = {10, 7};
-	int nota10[2] = {7, 4};
-	
-	// Popularea vectorului de studenti
-	v[0] = Student(nota1,2,"Prof 1","1","Alexandru");
-	v[1] = Student(nota2,2,"Prof 2","2","Liviu");
-	v[2] = Student(nota3,2,"Prof 3","3","Silviu");
-	v[3] = Student(nota4,2,"Prof 4","4","Laurentiu");
-	v[4] = Student(nota5,2,"Prof 5","5","Claudiu");
-	v[5] = Student(nota6,2,"Prof 6","6","Cornel");
-	v[6] = Student(nota7,2,"Prof 7","7","Tavi");
-	v[7] = Student(nota8,2,"Prof 8","8","Marius");
-	v[8] = Student(nota9,2,"Prof 9","9","Ion");
-	v[9] = Student(nota10,2,"Prof 10","10","Andrei");
+	// 1. Declaram un vector de obiecte tip Student
+    Student *s=new Student[5];
 
-	
-	Clasa clasa(v,10);
-	cout << "Elevii Clasei:"<< endl << clasa;
+    // 2. Alocam datele
+    int nota1[4] = { 10, 3, 6, 7 };
+    int nota2[4] = { 7, 2, 6, 8 };
+    int nota3[3] = { 10, 10, 4 };
+    int nota4[4] = { 10, 5, 8, 7 };
+    int nota5[4] = { 6, 8, 5, 6};
+
+    s[0] = Student(nota1, 4, "Dna Cosmina", "323AB",4, "Marius");
+    s[1] = Student(nota2, 4, "Dna Andrada", "312AB",4, "Vasile");
+    s[2] = Student(nota3, 3, "Dnul Ghiu", "323AB",4, "Ruxi");
+    s[3] = Student(nota4, 4, "Dna Maria", "324AB",4, "Ana");
+
+    cout << "Studentii in oridnea initiala sunt: " << endl;;
+    for(int i = 0 ; i < 4 ; i ++)
+	    cout << s[i]<< endl;
+
+    // 3. Sortam dupa medie
+    for (int i = 0; i < 3; i++) {
+        for (int j = i+1; j < 4; j++) {
+            if( s[i].getMedie() >= s[j].getMedie() ) {
+                s[i].interschimbare(s[j]);
+            } 
+        }
+    }
+
+    cout << "Studentii sortati crescator dupa medie sunt: " << endl;
+    for (int j = 0; j < 4 ; j++) {
+        std::cout << s[j] << endl;
+    }
+    
+    // 4. Schimbam numele dirigintelui 2
+    s[2].schimbare_nume("Dirig Nou");
+    
+    // 5. Adaugam un elev pe pozitia X
+    std::cout << "Introduceti pozitia pe care adaugam un student nou [0-4]: ";
+    int poz;
+    std::cin >> poz;
+    Student *arr = new Student[5];
+
+    for (int i = 0; i < poz; i++) {
+        arr[i] = s[i];
+    }
+
+    for (int i = poz+1; i < 5; i++) {
+        arr[i] = s[i-1];
+    }
+
+    arr[poz] = Student(nota5, 4, "Vidican x_x", "354AB",4, "Alexandra");
+
+    for (int j = 0; j < 5; j++) {
+    arr[j].setNrelevi(5); // Setați numărul corect de elevi
+    }
+
+    cout << "Noua lista de studenti: " << endl;
+    for (int j = 0; j < 5 ; j++) {
+        std::cout << arr[j] << endl;
+    }
+
+    delete[] s;
+    delete[] arr;
+
+    return 0;
 }
 
 	
